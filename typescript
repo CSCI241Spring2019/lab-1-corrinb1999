@@ -1,0 +1,771 @@
+Script started on Thu 11 Apr 2019 09:59:25 AM PDT
+corrinb@CF165-01:~$ mkdir csci 241
+corrinb@CF165-01:~$ cd cdci 241
+bash: cd: cdci: No such file or directory
+corrinb@CF165-01:~$ mkdir csci241
+corrinb@CF165-01:~$ cd cdci241
+bash: cd: cdci241: No such file or directory
+corrinb@CF165-01:~$ cdcsci csci[C[C[C[C241
+corrinb@CF165-01:~/csci241$ giot[K[Kt[K[Kit clone https://github.com/CSCI241Spring2019/lab-1 -corrinb1999.git
+Cloning into 'lab-1-corrinb1999'...
+remote: Enumerating objects: 8, done.[K
+remote: Counting objects:  12% (1/8)   [Kremote: Counting objects:  25% (2/8)   [Kremote: Counting objects:  37% (3/8)   [Kremote: Counting objects:  50% (4/8)   [Kremote: Counting objects:  62% (5/8)   [Kremote: Counting objects:  75% (6/8)   [Kremote: Counting objects:  87% (7/8)   [Kremote: Counting objects: 100% (8/8)   [Kremote: Counting objects: 100% (8/8), done.[K
+remote: Compressing objects:  25% (1/4)   [Kremote: Compressing objects:  50% (2/4)   [Kremote: Compressing objects:  75% (3/4)   [Kremote: Compressing objects: 100% (4/4)   [Kremote: Compressing objects: 100% (4/4), done.[K
+remote: Total 8 (delta 0), reused 8 (delta 0), pack-reused 0[K
+Unpacking objects:  12% (1/8)   Unpacking objects:  25% (2/8)   Unpacking objects:  37% (3/8)   Unpacking objects:  50% (4/8)   Unpacking objects:  62% (5/8)   Unpacking objects:  75% (6/8)   Unpacking objects:  87% (7/8)   Unpacking objects: 100% (8/8)   Unpacking objects: 100% (8/8), done.
+Checking connectivity... done.
+corrinb@CF165-01:~/csci241$ ls
+lab-1-corrinb1999
+corrinb@CF165-01:~/csci241$ git config --global user.email corrinb@wwu.edu
+corrinb@CF165-01:~/csci241$ git config --global user.name Brady C[K[K[Ky
+corrinb@CF165-01:~/csci241$ touch writeup.txt
+corrinb@CF165-01:~/csci241$ git add writeup.txt
+fatal: Not a git repository (or any parent up to mount point /home)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+corrinb@CF165-01:~/csci241$ touch writeu[K[K[K[K[K[K[K[K[K[K[K[Kgit init
+Initialized empty Git repository in /home/corrinb/csci241/.git/
+corrinb@CF165-01:~/csci241$ git add writeup.txt
+corrinb@CF165-01:~/csci241$ git -commit -n "Added new writeup"
+Unknown option: -commit
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+corrinb@CF165-01:~/csci241$ git -commit -n "Added new writeup"m[K[1P[1@m[1P[1@-[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Unknown option: -commit
+usage: git [--version] [--help] [-C <path>] [-c name=value]
+           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
+           [-p | --paginate | --no-pager] [--no-replace-objects] [--bare]
+           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
+           <command> [<args>]
+corrinb@CF165-01:~/csci241$ git -commit -m "Added new writeup"[1P[1@ [1@ [1P[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[master (root-commit) 663cc83] Added new writeup
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 writeup.txt
+corrinb@CF165-01:~/csci241$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+corrinb@CF165-01:~/csci241$ git push origin master
+fatal: 'origin' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+corrinb@CF165-01:~/csci241$ git push mastw[Ker
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream master master
+
+corrinb@CF165-01:~/csci241$ git push --set-upstream master master
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+corrinb@CF165-01:~/csci241$ git push --set-upstream master mastermaster[K[K[K[K[K[K[Klab-1-corrinb1999
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream lab-1-corrinb1999 master
+
+corrinb@CF165-01:~/csci241$ git push lab-1-corrinb1999--set-upstream master mastermaster[Korigin master[K[K[K[K[K[K[K
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+corrinb@CF165-01:~/csci241$ [Kcorrinb@CF165-01:~/csci241$ =[Kgit push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+corrinb@CF165-01:~/csci241$ git rea[Kmote add origin https://github.com/CSCI241Spring2019/lab -1-corrinb1999
+corrinb@CF165-01:~/csci241$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+corrinb@CF165-01:~/csci241$ git push[Kgit ass[K[Kdd writeup.txt
+corrinb@CF165-01:~/csci241$ git commit -m "Added First and Last Name"
+[master d95c12a] Added First and Last Name
+ 1 file changed, 1 insertion(+)
+corrinb@CF165-01:~/csci241$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mlab-1-corrinb1999/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+corrinb@CF165-01:~/csci241$ git status [K
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   writeup.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mlab-1-corrinb1999/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+corrinb@CF165-01:~/csci241$ git ass[K[Kdd writu[Keup.txt
+corrinb@CF165-01:~/csci241$ git stauts[K[K[Ktus
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   writeup.txt[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mlab-1-corrinb1999/[m
+
+corrinb@CF165-01:~/csci241$ git commit -m "d[KAdded hobby"
+[master 4a6af24] Added hobby
+ 1 file changed, 1 insertion(+)
+corrinb@CF165-01:~/csci241$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mlab-1-corrinb1999/[m
+
+nothing added to commit but untracked files present (use "git add" to track)
+corrinb@CF165-01:~/csci241$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+corrinb@CF165-01:~/csci241$ 
+corrinb@CF165-01:~/csci241$ touch username.txt
+corrinb@CF165-01:~/csci241$ git add lab-1-corrinb1999
+corrinb@CF165-01:~/csci241$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mnew file:   lab-1-corrinb1999[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31musername.txt[m
+
+corrinb@CF165-01:~/csci241$ git add username.txt
+corrinb@CF165-01:~/csci241$ git commit -m "A[KCreated username.txt"
+[master f654abb] Created username.txt
+ 2 files changed, 2 insertions(+)
+ create mode 160000 lab-1-corrinb1999
+ create mode 100644 username.txt
+corrinb@CF165-01:~/csci241$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+corrinb@CF165-01:~/csci241$ git checkout
+corrinb@CF165-01:~/csci241$ gir[Kt reset
+corrinb@CF165-01:~/csci241$ git rm
+usage: git rm [<options>] [--] <file>...
+
+    -n, --dry-run         dry run
+    -q, --quiet           do not list removed files
+    --cached              only remove from the index
+    -f, --force           override the up-to-date check
+    -r                    allow recursive removal
+    --ignore-unmatch      exit with a zero status even if nothing matched
+
+corrinb@CF165-01:~/csci241$ git mv
+usage: git mv [<options>] <source>... <destination>
+
+    -v, --verbose         be verbose
+    -n, --dry-run         dry run
+    -f, --force           force move/rename even if target exists
+    -k                    skip move/rename errors
+
+corrinb@CF165-01:~/csci241$ git b[Krm writeup.txt
+rm 'writeup.txt'
+corrinb@CF165-01:~/csci241$ git rm writeup.txt
+fatal: pathspec 'writeup.txt' did not match any files
+corrinb@CF165-01:~/csci241$ git [K[K[K[Ktouch q[Kwriteup.txt
+corrinb@CF165-01:~/csci241$ git add writeup.txt
+corrinb@CF165-01:~/csci241$ git commit -m "Opps[K[K[Kops, remade writeup"
+On branch master
+nothing to commit, working directory clean
+corrinb@CF165-01:~/csci241$ git status
+On branch master
+nothing to commit, working directory clean
+corrinb@CF165-01:~/csci241$ git log
+[?1h=[33mcommit f654abbf6dbf7c061a03dcc0053dc166c91fdad6[m[m
+Author: Brady <corrinb@wwu.edu>[m
+Date:   Thu Apr 11 10:38:28 2019 -0700[m
+[m
+    Created username.txt[m
+[m
+[33mcommit 4a6af24533bb15f3fd0967873b9ebe951c25522a[m[m
+Author: Brady <corrinb@wwu.edu>[m
+Date:   Thu Apr 11 10:35:14 2019 -0700[m
+[m
+    Added hobby[m
+[m
+[33mcommit d95c12a0135d8148e08c43925bb3d5efccd063ef[m[m
+Author: Brady <corrinb@wwu.edu>[m
+Date:   Thu Apr 11 10:33:04 2019 -0700[m
+[m
+    Added First and Last Name[m
+[m
+[33mcommit 663cc83b0d3900af948b1d8d642ee962487a50ab[m[m
+Author: Brady <corrinb@wwu.edu>[m
+Date:   Thu Apr 11 10:16:21 2019 -0700[m
+[m
+    Added new writeup[m
+[K[?1l>corrinb@CF165-01:~/csci241$ git diff
+[?1h=[K[?1l>corrinb@CF165-01:~/csci241$ push [K[K[K[K[Kgit push master
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: 'master' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+corrinb@CF165-01:~/csci241$ cd lab-1-corrinb1999
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git add username.txt
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git add username.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txt[1P.txtw.txtr.txti.txtt.txte.txtu.txtp.txt[C[C[C[C\[K
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git commit -m "Trying to push files"
+[master a3e5b78] Trying to push files
+ 2 files changed, 3 insertions(+)
+ create mode 100644 username.txt
+ create mode 100644 writeup.txt
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': git po ush master
+Password for 'https://git push master@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/CSCI241Spring2019/lab-1-corrinb1999.git/'
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': corrinb1999
+Password for 'https://corrinb1999@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/CSCI241Spring2019/lab-1-corrinb1999.git/'
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ www[K[K[Kcd [K cdci241
+bash: cd: cdci241: No such file or directory
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ cd cdci241scdci241[Csdci241[C[1Pci241[1Pcsci241[C[C[C[C[C[C[C
+bash: cd: csci241: No such file or directory
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ cd csci2411[K
+bash: cd: csci241: No such file or directory
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ 
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ 
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ cd /
+corrinb@CF165-01:/$ cd csci241
+bash: cd: csci241: No such file or directory
+corrinb@CF165-01:/$ cd csci241
+bash: cd: csci241: No such file or directory
+corrinb@CF165-01:/$ cd /
+corrinb@CF165-01:/$ cd ~
+corrinb@CF165-01:~$ cd corrinb[K[K[K[K[K[Ksci241
+corrinb@CF165-01:~/csci241$ git vran=[K[K[K[K[Kbranch question3
+corrinb@CF165-01:~/csci241$ git checkout question3
+M	lab-1-corrinb1999
+Switched to branch 'question3'
+corrinb@CF165-01:~/csci241$ ad [Kd wroteu[K[K[K[Kiteup.txt
+No command 'add' found, did you mean:
+ Command 'hadd' from package 'root-system-bin' (universe)
+ Command 'aid' from package 'id-utils' (universe)
+ Command 'atd' from package 'at' (main)
+ Command 'and' from package 'and' (universe)
+ Command 'dd' from package 'coreutils' (main)
+ Command 'ldd' from package 'libc-bin' (main)
+ Command 'amd' from package 'am-utils' (universe)
+ Command 'axd' from package 'afnix' (universe)
+ Command 'tdd' from package 'devtodo' (universe)
+ Command 'adb' from package 'adb' (universe)
+ Command 'adb' from package 'android-tools-adb' (universe)
+ Command 'ddd' from package 'ddd' (universe)
+ Command 'ad' from package 'netatalk' (universe)
+ Command 'adbd' from package 'android-tools-adbd' (universe)
+add: command not found
+corrinb@CF165-01:~/csci241$ git add writeupt[K.txt
+corrinb@CF165-01:~/csci241$ git commit -m "Added Q3"
+[question3 e8665c0] Added Q3
+ 1 file changed, 1 insertion(+)
+corrinb@CF165-01:~/csci241$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch question3 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin question3
+
+corrinb@CF165-01:~/csci241$ git push question3
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: 'question3' does not appear to be a git repository
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+corrinb@CF165-01:~/csci241$ cd lab-1-corrinb1999
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git add writeup.txt
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ fit [K[K[K[Kgit commit -m writeup.txt
+[master eef06a6] writeup.txt
+ 1 file changed, 1 insertion(+)
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': corrinv b1999
+Password for 'https://corrinb1999@github.com': 
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/CSCI241Spring2019/lab-1-corrinb1999.git/'
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': corrinb1999
+Password for 'https://corrinb1999@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 8 threads.
+Compressing objects:  20% (1/5)   Compressing objects:  40% (2/5)   Compressing objects:  60% (3/5)   Compressing objects:  80% (4/5)   Compressing objects: 100% (5/5)   Compressing objects: 100% (5/5), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 682 bytes | 0 bytes/s, done.
+Total 7 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/1)   [Kremote: Resolving deltas: 100% (1/1)   [Kremote: Resolving deltas: 100% (1/1), done.[K
+To https://github.com/CSCI241Spring2019/lab-1-corrinb1999.git
+   1523c09..eef06a6  master -> master
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git branch question3
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git checkout question3
+Switched to branch 'question3'
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git add writeup.txt
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git commit -m "Qestion [K#[K3 branch, question 3[K3"
+On branch question3
+nothing to commit, working directory clean
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git o[Kpush
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: The current branch question3 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin question3
+
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git push --set-upstream origin question3
+Username for 'https://github.com': corrinb1999
+Password for 'https://corrinb1999@github.com': 
+Total 0 (delta 0), reused 0 (delta 0)
+giremote: 
+remote: Create a pull request for 'question3' on GitHub by visiting:[K
+remote:      https://github.com/CSCI241Spring2019/lab-1-corrinb1999/pull/new/question3[K
+remote: 
+To https://github.com/CSCI241Spring2019/lab-1-corrinb1999.git
+ * [new branch]      question3 -> question3
+Branch question3 set up to track remote branch question3 from origin.
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git[K[K[Kgit checkout master
+Switched to branch 'master'
+Your branch is up-to-date with 'origin/master'.
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git merge question3
+Already up-to-date.
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ gradle build
+[0m
+Welcome to Gradle 5.0!
+
+Here are the highlights of this release:
+ - Kotlin DSL 1.0
+ - Task timeouts
+ - Dependency alignment aka BOM support
+ - Interactive `gradle init`
+
+For more details see https://docs.gradle.org/5.0/release-notes.html
+
+Starting a Gradle Daemon (subsequent builds will be faster)
+
+
+[2A[1B[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A[1m> Starting Daemon[m[17D[1B[1A> IDLE[0K[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% INITIALIZING [0s][m[36D[1B[1m> Evaluating settings[m[21D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[0K[35D[1B[1m> Loading projects[m[0K[18D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[0K[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project > Compiling /home/corrinb/csci241/lab-1-corrinb1999/build.gradle into loca[m[89D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [0s][m[35D[1B[1m> root project[m[0K[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% CONFIGURING [1s][m[35D[1B[1m> root project[m[14D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [1s][m[37D[1B> IDLE[0K[6D[1B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [1s][m[37D[2B[2A[1m<[0;32;1m=============[0;39;1m> 100% CONFIGURING [1s][m[37D[2B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [1s][m[0K[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [1s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [1s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1m===[0;39;1m----------> 28% EXECUTING [1s][m[34D[1B[1m> :startScripts[m[15D[1B[2A[1m<[0;32;1m===[0;39;1m----------> 28% EXECUTING [2s][m[34D[1B[1m> :startScripts[m[15D[1B[2A[0K
+[32;1mBUILD SUCCESSFUL[0;39m in 4s
+5 actionable tasks: 5 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B> IDLE[6D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[2B[2A[2K[1B[2K[1A[0mcorrinb@CF165-01:~/csci241/lab-1-corrinb1999$ gradle run
+[0m
+
+[1A[1m> Connecting to Daemon[m[22D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[0K[6D[1B[2A[0K
+[1m> Task :run[m
+Hello World!
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 1 executed, 1 up-to-date
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :run[m[6D[1B[2A[2K[1B[2K[1A[0mcorrinb@CF165-01:~/csci241/lab-1-corrinb1999$ gradle run --args="241"
+[0m
+
+[1A[1m> Connecting to Daemon[m[22D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[0K[14D[1B[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[0K[6D[1B[2A[0K
+[1m> Task :run[m
+[Ljava.lang.String;@4aa298b7
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 2 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :run[m[6D[1B[2A[2K[1B[2K[1A[0mcorrinb@CF165-01:~/csci241/lab-1-corrinb1999$ gradle run --args="241"
+[0m
+
+[2A[1m<[0;32;1;0;39;1m-------------> 0% EXECUTING [0s][m[33D[1B[1m> :compileJava[m[14D[1B[2A[0K
+[1m> Task :run[m[0K
+Hello [Ljava.lang.String;@4aa298b7!
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 2 executed
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :compileJava[m[14D[1B[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B> IDLE[0K[6D[1B[2A[2K[1B[2K[1A[0mcorrinb@CF165-01:~/csci241/lab-1-corrinb1999$ gradle run --args="241"[C[1P1"[1P1"[1P1"[1P"[K"?'[K"
+[0m
+
+[2A[1m<[0;32;1m=========[0;39;1m----> 75% EXECUTING [0s][m[34D[1B[1m> :run[m[6D[1B[2A[0K
+[1m> Task :run[m
+Hello [Ljava.lang.String;@4aa298b7!
+
+[32;1mBUILD SUCCESSFUL[0;39m in 0s
+2 actionable tasks: 1 executed, 1 up-to-date
+[0K
+[0K
+[2A[1m<[0;32;1;0;39;1m-------------> 0% WAITING[m[26D[1B[1m> :run[m[6D[1B[2A[2K[1B[2K[1A[0mcorrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git add sc[Krc/main/java/lab1/Hello.java
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git commit -m "Hello no prints command line  args"
+[master 966af42] Hello no prints command line args
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': corrinb1999
+Password for 'https://corrinb1999@github.com': 
+Counting objects: 7, done.
+Delta compression using up to 8 threads.
+Compressing objects:  33% (1/3)   Compressing objects:  66% (2/3)   Compressing objects: 100% (3/3)   Compressing objects: 100% (3/3), done.
+Writing objects:  14% (1/7)   Writing objects:  28% (2/7)   Writing objects:  42% (3/7)   Writing objects:  57% (4/7)   Writing objects:  71% (5/7)   Writing objects:  85% (6/7)   Writing objects: 100% (7/7)   Writing objects: 100% (7/7), 484 bytes | 0 bytes/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/2)   [Kremote: Resolving deltas:  50% (1/2)   [Kremote: Resolving deltas: 100% (2/2)   [Kremote: Resolving deltas: 100% (2/2), completed with 2 local objects.[K
+To https://github.com/CSCI241Spring2019/lab-1-corrinb1999.git
+   eef06a6..966af42  master -> master
+corrinb@CF165-01:~/csci241/lab-1-corrinb1999$ exit
+exit
+
+Script done on Thu 11 Apr 2019 11:28:23 AM PDT
